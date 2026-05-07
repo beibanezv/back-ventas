@@ -20,7 +20,7 @@ services:
       retries: 5
 
   back-ventas:
-    build: ./Springboot-API-REST
+    image: ${DOCKERHUB_USERNAME}/back-ventas:latest
     container_name: back-ventas
     ports:
       - "8080:8080"
