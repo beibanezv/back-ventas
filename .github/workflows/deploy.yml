@@ -49,4 +49,4 @@ jobs:
             echo "DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }}" >> .env
             docker compose pull
             docker compose down
-            docker compose up -d
+            docker compose up -d --no-wait
